@@ -53,3 +53,12 @@ const cloneObject = obj => {
   return clone;
 }
 ```
+
+Worst function:
+```js
+// JSON
+const cloneObject = obj => {
+  let clone = JSON.parse(JSON.stringify(obj));
+  return clone;
+}
+```
