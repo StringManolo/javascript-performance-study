@@ -1,0 +1,65 @@
+> qjs cloneObject.js
+
+Config:
+  - Running 1 times
+
+Results:
+cloneUsingJSON -> 0ms
+cloneAssigningProperties -> 0ms
+cloneUsingObjectAssign -> 0ms
+
+
+Config:
+  - Running 10 times
+
+Results:
+cloneUsingJSON -> 0ms
+cloneAssigningProperties -> 0ms
+cloneUsingObjectAssign -> 0ms
+
+
+Config:
+  - Running 100 times
+
+Results:
+cloneUsingJSON -> 2ms
+cloneAssigningProperties -> 1ms
+cloneUsingObjectAssign -> 0ms
+
+
+Config:
+  - Running 1000 times
+
+Results:
+cloneUsingJSON -> 18ms
+cloneAssigningProperties -> 2ms
+cloneUsingObjectAssign -> 2ms
+
+
+Config:
+  - Running 10000 times
+
+Results:
+cloneUsingJSON -> 88ms
+cloneAssigningProperties -> 25ms
+cloneUsingObjectAssign -> 16ms
+
+
+Config:
+  - Running 100000 times
+
+Results:
+cloneUsingJSON -> 782ms
+cloneAssigningProperties -> 250ms
+cloneUsingObjectAssign -> 160ms
+
+
+Config:
+  - Running 1000000 times
+
+Results:
+cloneUsingJSON -> 7820ms
+cloneAssigningProperties -> 2508ms
+cloneUsingObjectAssign -> 1604ms
+
+TOTAL: 12945ms

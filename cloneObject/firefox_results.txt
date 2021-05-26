@@ -1,0 +1,65 @@
+Browser Firefox Nighly (Android)
+
+Config:
+  - Running 1 times
+
+Results:
+cloneUsingJSON -> 0ms
+cloneAssigningProperties -> 0ms
+cloneUsingObjectAssign -> 1ms
+
+
+Config:
+  - Running 10 times
+
+Results:
+cloneUsingJSON -> 1ms
+cloneAssigningProperties -> 0ms
+cloneUsingObjectAssign -> 0ms
+
+
+Config:
+  - Running 100 times
+
+Results:
+cloneUsingJSON -> 1ms
+cloneAssigningProperties -> 0ms
+cloneUsingObjectAssign -> 0ms
+
+
+Config:
+  - Running 1000 times
+
+Results:
+cloneUsingJSON -> 7ms
+cloneAssigningProperties -> 1ms
+cloneUsingObjectAssign -> 0ms
+
+
+Config:
+  - Running 10000 times
+
+Results:
+cloneUsingJSON -> 31ms
+cloneAssigningProperties -> 4ms
+cloneUsingObjectAssign -> 7ms
+
+
+Config:
+  - Running 100000 times
+
+Results:
+cloneUsingJSON -> 261ms
+cloneAssigningProperties -> 17ms
+cloneUsingObjectAssign -> 46ms
+
+
+Config:
+  - Running 1000000 times
+
+Results:
+cloneUsingJSON -> 3116ms
+cloneAssigningProperties -> 162ms
+cloneUsingObjectAssign -> 460ms
+
+TOTAL: 4115ms

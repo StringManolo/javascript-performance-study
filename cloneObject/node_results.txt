@@ -1,0 +1,65 @@
+node cloneObject.js
+
+Config:
+  - Running 1 times
+
+Results:
+cloneUsingJSON -> 0ms
+cloneAssigningProperties -> 0ms
+cloneUsingObjectAssign -> 0ms
+
+
+Config:
+  - Running 10 times
+
+Results:
+cloneUsingJSON -> 0ms
+cloneAssigningProperties -> 0ms
+cloneUsingObjectAssign -> 0ms
+
+
+Config:
+  - Running 100 times
+
+Results:
+cloneUsingJSON -> 0ms
+cloneAssigningProperties -> 0ms
+cloneUsingObjectAssign -> 1ms
+
+
+Config:
+  - Running 1000 times
+
+Results:
+cloneUsingJSON -> 4ms
+cloneAssigningProperties -> 1ms
+cloneUsingObjectAssign -> 5ms
+
+
+Config:
+  - Running 10000 times
+
+Results:
+cloneUsingJSON -> 56ms
+cloneAssigningProperties -> 9ms
+cloneUsingObjectAssign -> 40ms
+
+
+Config:
+  - Running 100000 times
+
+Results:
+cloneUsingJSON -> 387ms
+cloneAssigningProperties -> 25ms
+cloneUsingObjectAssign -> 313ms
+
+
+Config:
+  - Running 1000000 times
+
+Results:
+cloneUsingJSON -> 3833ms
+cloneAssigningProperties -> 179ms
+cloneUsingObjectAssign -> 3080ms
+
+TOTAL: 8215ms
