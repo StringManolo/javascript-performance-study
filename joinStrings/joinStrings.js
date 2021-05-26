@@ -76,9 +76,20 @@ Config:
   - Running 30000 times
 
 Results:
-strPlusStr -> 8100ms
+strPlusStr -> 8100ms           HERE
 strToArrayPush -> 19ms
 strConcatStr -> 24ms
+
+
+> node joinStrings.js
+
+Config:
+  - Running 30000 times
+
+Results:
+strPlusStr -> 13ms        THIS IS ALL GOOD
+strToArrayPush -> 14ms
+strConcatStr -> 13ms
 
 */
 
