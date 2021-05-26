@@ -10,35 +10,35 @@ Config:
 
 #### Chrome (88.0.4324.152)   
 |    Method     |     Time     |
-| :-----------: | ----------:  |
-|     JSON      |    2069 ms   |
-| Assign Props  |     163 ms   |
-| Object.assign |    1488 ms   |
+| :-----------: | :----------:  |
+|     JSON      |    2.069 s   |
+| Assign Props  |    0.163 s   |
+| Object.assign |    1.488 s   |
 
   
 
 #### Firefox (Nightly 210310)  
 |    Method     |     Time     |
-| :-----------: | ----------:  |
-|     JSON      |    3116 ms   |
-| Assign Props  |     162 ms   |
-| Object.assign |     460 ms   |
+| :-----------: | :----------: |
+|     JSON      |    3.116 s   |
+| Assign Props  |    0.162 s   |
+| Object.assign |    0.460 s   |
   
   
 
 #### Node (v14.15.4)   
 |    Method     |     Time     |
-| :-----------: | ----------:  |
-|     JSON      |    3833 ms   |
-| Assign Props  |     179 ms   |
-| Object.assign |    3080 ms   |
+| :-----------: | :----------: |
+|     JSON      |    3.833 s   |
+| Assign Props  |    0.179 s   |
+| Object.assign |    3.080 s   |
 
 #### Quickjs (v2020-11-08)  
 |    Method     |     Time     |
-| :-----------: | ----------:  |
-|     JSON      |    7820 ms   |
-| Assign Props  |    2508 ms   |
-| Object.assign |    1604 ms   |
+| :-----------: | :----------: |
+|     JSON      |    7.820 s   |
+| Assign Props  |    2.508 s   |
+| Object.assign |    1.604 s   |
   
   
   
