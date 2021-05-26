@@ -8,7 +8,6 @@ const strPlusStr = times => {
     str += str1 +  str2;
   }
   return str;
-
 }
 
 const strToArrayPush = times => {
@@ -16,6 +15,14 @@ const strToArrayPush = times => {
   for(let i = 0; i < times; ++i) {
     str.push(str1);
     str.push(str2);
+  }
+  return str.join("");
+}
+
+const strPush = times => {
+  let str = [];
+  for(let i = 0; i < times; ++i) {
+    str.push(str1, str2);
   }
   return str.join("");
 }
@@ -46,6 +53,10 @@ const test = times => {
   results.push(new Date() - time);
 
   time = new Date();
+  strPush(times);
+  results.push(new Date() - time);
+
+  time = new Date();
   strConcatStr(times);
   results.push(new Date() - time);
 
@@ -56,7 +67,8 @@ Config:
 Results:
 strPlusStr -> ${results[0]}ms
 strToArrayPush -> ${results[1]}ms
-strConcatStr -> ${results[2]}ms
+strPush -> ${results[2]}ms
+strConcatStr -> ${results[3]}ms
 `);
 }
 
