@@ -42,7 +42,7 @@ Config:
   
   
   
-Winner function:
+Winner:
 ```js
 // Assign Props
 const cloneObject = obj => {
@@ -54,7 +54,7 @@ const cloneObject = obj => {
 }
 ```
 
-Worst function:
+Loser:
 ```js
 // JSON
 const cloneObject = obj => {
@@ -62,3 +62,54 @@ const cloneObject = obj => {
   return clone;
 }
 ```
+
+## Add 2 strings
+Config: 
+```Adding 1.000.000 times```  
+
+#### Chrome (88.0.4324.152)
+|    Method     |     Time     |
+| :-----------: | :----------: |
+|      +=       |    0.191 s   |
+|   [].push()   |    0.308 s   |
+|  "".concat()  |    0.248 s   |
+
+
+
+#### Firefox (Nightly 210310)
+|    Method     |     Time     |
+| :-----------: | :----------: |
+|      +=       |    0.068 s   |
+|   [].push()   |    0.142 s   |
+|  "".concat()  |    0.502 s   |
+
+
+
+#### Node (v14.15.4)
+|    Method     |     Time     |
+| :-----------: | :----------: |
+|      +=       |    0.412 s   |
+|   [].push()   |    0.373 s   |
+|  "".concat()  |    0.197 s   |
+
+#### Quickjs (v2020-11-08)
+|    Method     |     Time     |
+| :-----------: | :----------: |
+|      +=       |     slow s   |
+|    [].push()  |    0.666 s   |
+|  "".concat()  |    0.773 s   |
+
+Winner:
+```js
+const addStrings = (s1, s2) => s1 + s2;
+```
+
+Loser:
+```js
+const addStrings = (s1, s2) => s1.concat(s2);
+```
+
+
+## lib/perfFunctions.mjs
+
+Module implementing the faster functions
