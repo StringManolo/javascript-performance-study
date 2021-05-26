@@ -64,7 +64,21 @@ strConcatStr -> ${results[2]}ms
 test(1)
 test(10)
 test(100)
-test(1000) 
+test(1000)
 test(10000)
-test(100000)*/
-test(1000000)
+test(100000) */
+//test(1000000)
+test(30000); // qjs bug on strPlusStr function
+
+/* > qjs joinStrings.js
+
+Config:
+  - Running 30000 times
+
+Results:
+strPlusStr -> 8100ms
+strToArrayPush -> 19ms
+strConcatStr -> 24ms
+
+*/
+
