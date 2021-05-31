@@ -1,0 +1,51 @@
+
+code: javascript
+[size=18pt][b]perfFunctions[/b][/size]
+
+[hr]
+[size=15pt][b]ES6 module[/b][/size]
+
+[hr]
+[size=13pt][b]Good performant functions to accomplish basic tasks in javascript[/b][/size]
+
+[hr]
+Good performant javascript functions library.
+
+
+
+[size=11pt][b][i]object[/i] [b]perf[/b][/b][/size]
+Exported object holding the library methods to export.
+
+
+
+[size=11pt][b][i]method[/i] [b]perf.cloneObject[/b][/b][/size]
+Get a dereferenced clone of a basic object
+Argument: [b]obj[/b] [i]Object[/i]   The object to be cloned
+Return: [b]clone[/b] [i]Object[/i]   The new cloned object
+[code=javascript]import perf from "./perfFunctions";
+
+const car = {
+  model: "Mustang",
+  color: "Blue
+}
+
+const referenceToCar = car;
+
+const blueCar = perf.cloneObject(car);
+blueCar.model = "Raptor";
+
+// car model is "Mustang"
+// referenceToCar model is "Mustang"
+// blueCar model is "Raptor"
+
+referenceToCar.model = "Transit";
+
+// car model is "Transit"
+// referenceToCar model is "Transit"
+// blueCar model is "Raptor"[/code]
+
+
+[size=11pt][b][i]method[/i] [b]perf.addStrings[/b][/b][/size]
+Argument: [b](...str)[/b] [i]String[/i]   Strings to add
+Return: [b]res[/b] [i]String[/i]   Joined strings
+[code=javascript]const helloWorld = addStrings("hello", "world", "!");[/code]
