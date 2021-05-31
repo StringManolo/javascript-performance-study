@@ -48,4 +48,4 @@ referenceToCar.model = "Transit";
 [size=11pt][b][i]method[/i] [b]perf.addStrings[/b][/b][/size]
 Argument: [b](...str)[/b] [i]String[/i]   Strings to add
 Return: [b]res[/b] [i]String[/i]   Joined strings
-[code=javascript]const helloWorld = addStrings("hello", "world", "!");[/code]
+[code=javascript]const helloWorld = perf.addStrings("hello", "world", "!");[/code]

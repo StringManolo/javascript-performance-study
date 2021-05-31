@@ -48,5 +48,5 @@ referenceToCar.model = "Transit";
 Argument: **(...str)** _String_   Strings to add  
 Return: **res** _String_   Joined strings  
 ```javascript
-const helloWorld = addStrings("hello", "world", "!");
+const helloWorld = perf.addStrings("hello", "world", "!");
 ```
